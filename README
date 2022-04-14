@@ -1,0 +1,46 @@
+Name: Manjot Saggu
+SID:  1693571
+CCID: msaggu
+
+CMPUT 275 - Wi22
+Assignment Part II: Trivial Navigation System
+
+
+Included Files:
+	Soln Directory:
+	* Makefile
+	* README
+	Server Directory:
+	* digraph.h (unchanged)
+	* digraph.cpp (unchanged)
+	* dijkstra.cpp (unchanged)
+	* server.cpp
+	* client.py (unchanged)
+	* Makefile
+
+Running Instructions:
+	1. Ensure that there are no existing pipes in the soln directory using "make clean" in the soln directory using the soln Makefile. Then, using the server directory Makefile, make the executables. The server and client should be ran from this directory only!
+	2. Using provided test cases, dijkstra.cpp, server.cpp, directory Makefile, and created Makefile, each inquiry will be taken in and the shortest weighted distance will be outputted based on the 2 points provided. Each input will be received from the client, being ran in a separate terminal at the same time, BUT opened after the server is first run.
+	3. Use W/A/S/D to move around the map, R to reset the points, and left click to place waypoints on the map to find the route between each point.
+	4. If there is no waypoint, there will be no route drawn and 'E' will be outputted to the client. There is no need to acknowledge the receipt of any coordinates. The server will continue to run until the plotter is closed, being acknowledged by a Q printed out on the client side.
+
+Notes and Assumptions:
+
+	1. The associated files mentioned above are to be included and ran at the time of the assessment. No files, other than those listed above, need to be included with the submission.
+	2. We are not to be concerned with any other error handling.
+	3. The majority of the starter code was provided by the instructors and TA's of this course. Server.cpp and created Makefiles were the only cpp code changed amongst the files.
+
+Functionality included outside of the exercise/assignment specifications:
+
+	None.
+
+Arduino-based components needed to run the program & wiring instructions:
+
+	N/A.
+
+Makefile targets & explanation of such targets:
+
+	- server is the executable file that is created based off of the object files of dijkstra.o, server.o, and digraph.o. These object files are created using their respective .cpp files using c++11. Soln directory Makefile will clean any pipes and associated executables and object files within /server, as it will call the clean in the Makefile within the server directory.
+
+Acknowledgements:
+	Much of the code provided (unchanged) was provided by the professors of CMPUT 275, Dr. Lu and Dr. Ardikanian. Credit goes to the original authors of the provided code. While Dijkstra's algorithm and all of server.cpp were written in Part I of the assignment, they have been provided for Part II in order to comply with the client.py code.

@@ -1,0 +1,35 @@
+Name: Manjot Saggu
+SID:  1693571
+CCID: msaggu
+
+CMPUT 275 - Wi22
+Assignment Part 1: Trivial Navigation System
+
+
+Included Files:
+	* dijkstra.cpp
+	* server.cpp
+	* Makefile
+	* README
+
+Running Instructions:
+	1. Using provided test cases, dijkstra.cpp, server.cpp, directory Makefile, and created Makefile, each inquiry will be taken in and the shortest weighted distance will be outputted based on the 2 points provided. The inputs must be within in the format of, for example, "R 5365486 -11333915 5364728 -11335891". This will output the total number of waypoints.
+	2. After this, each output must be followed by the input 'A', to acknowledge the receipt of such an output and to limit output.
+	3. After all of the waypoints have been outputted, no acknowledgement is required when "E" is outputted to the terminal, as this indicated the end of the waypoints.
+
+Notes and Assumptions:
+
+	1. The associated files mentioned above are to be included and ran at the time of the assessment. No files, other than those listed above, need to be included with the submission.
+	2. We are not to be concerned with any other error handling.
+
+Functionality included outside of the exercise/assignment specifications:
+
+	None.
+
+Arduino-based components needed to run the program & wiring instructions:
+
+	N/A.
+
+Makefile targets & explanation of such targets:
+
+	- server is the executable file that is created based off of the object files of dijkstra.o, server.o, and digraph.o. These object files are created using their respective .cpp files using c++11
